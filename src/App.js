@@ -1,10 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header.js';
+
+import FunctionalComp from './components/functionalComp';
+import {ClassComp, ClassComp1} from './components/classComp';
+import Click from './components/Click';
+import Counter from './components/Counter';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+    <Header />
+
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -17,7 +24,19 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </header> */}
+      <div>
+        <h1 className='body'>
+          Learning React
+        </h1>
+        <FunctionalComp />
+        <ClassComp />
+        <ClassComp1 />
+        <ClassComp1 />
+        <Click />
+        <Counter />
+
+      </div>
     </div>
   );
 }
