@@ -5,6 +5,9 @@ import FunctionalComp from './components/functionalComp';
 import {ClassComp, ClassComp1} from './components/classComp';
 import Click from './components/Click';
 import Counter from './components/Counter';
+import ParentComp from './components/ParentComp';
+import ClassProps from './components/ClassProps';
+import Functionalprops from './components/FunctionalProps';
 
 function App() {
   return (
@@ -35,8 +38,13 @@ function App() {
         <ClassComp1 />
         <Click />
         <Counter />
+        <ParentComp />
+        <ClassProps name="Vipin Yadav" place="Bharssr Khas" /> {/* Passing name as props from Parent
+                                            i.e App.js to child i.e ClassProps and rendering in HTML using {this.props.name} */}
+      <Functionalprops name="Learner 4" place="Bangalore"/>
 
       </div>
+
     </div>
   );
 }
